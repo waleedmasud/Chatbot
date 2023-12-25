@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+     background: linear-gradient(to right, #c33764, #1d2671);
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+#chat-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+#chat-header {
+    background-color: #5b86e5;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.message-container {
+    display: flex;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+
+.user-pic, .chatbot-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.message-content {
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+}
+
+#user-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #eee;
+}
+
+#user-input input {
+    flex: 1;
+    padding: 8px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#user-input button {
+    background-color: #5b86e5;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#delete-messages {
+background-color: #ff4d4d;
+color: #fff; 
+border: none;
+padding: 5px 10px;
+border-radius: 5px;
+cursor: pointer;
+float: right;
+}
+
+#delete-messages:hover {
+background-color: #cc0000; 
+}

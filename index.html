@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chatbot UI</title>
+</head>
+<body>
+    <div id="chat-container">
+        <div id="chat-header">
+            Chatbot
+            <button id="delete-messages">Delete All Messages</button>
+        </div>
+        <div id="chat-messages"></div>
+        <div id="user-input">
+            <input type="text" id="user-message" placeholder="Type your message...">
+            <button type="submit" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
