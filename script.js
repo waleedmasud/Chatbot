@@ -27,10 +27,10 @@ async function sendMessage() {
   
   async function fetchAPI(userMessage) {
   
-    const response = await fetch("https://api-inference.huggingface.co/models/mistralai/Mistral-7B-v0.1", {
+    const response = await fetch("YOUR_ENDPOINT_HERE", {
       method: 'POST',
       headers: {
-        Authorization: "Bearer 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",
+        Authorization: "YOUR_API_KEY_HERE",
         "Content-Type": "application/json"
       },
       body: JSON.stringify({ inputs: userMessage })
@@ -48,7 +48,7 @@ async function sendMessage() {
   
     chatMessages.innerHTML += `
       <div class="message-container">
-        <img src="My pic.jpg" alt="User" class="user-pic">
+        <img src="YOUR_IMG_HERE" alt="User" class="user-pic">
         <div class="message-content"><strong></strong> ${message}</div>
       </div>
     `;
@@ -62,7 +62,7 @@ async function sendMessage() {
   
     chatMessages.innerHTML += `
       <div class="message-container">
-        <img src="A_black_mask_man_using_Macbook_pro_in_a_room.png" alt="Chatbot" class="chatbot-pic">
+        <img src="YOUR_BOT_IMG_HERE" alt="Chatbot" class="chatbot-pic">
         <div class="message-content"><strong>Chatbot:</strong> ${message}</div>
       </div>
     `;
